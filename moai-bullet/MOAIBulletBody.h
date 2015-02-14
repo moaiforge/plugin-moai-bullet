@@ -49,8 +49,8 @@ private:
 	btCompoundShape*		mCompound;
 
 //FOR STATE SAVE
-	btVector3	mRot;
-	btVector3	mLoc;
+	btVector3*	mRot;
+	btVector3*	mLoc;
 	string		idName;
 
 	static int		_SetIdType		 ( lua_State* L );

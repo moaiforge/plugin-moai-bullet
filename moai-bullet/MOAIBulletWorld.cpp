@@ -820,14 +820,14 @@ int MOAIBulletWorld::_setForceUpdateAllAabbs ( lua_State* L ) {
 //----------------------------------------------------------------//
 int MOAIBulletWorld::_defaultMaxCollisionAlgorithmPoolSize ( lua_State* L ) {
 	MOAI_LUA_SETUP ( MOAIBulletWorld, "U" )
-	long defaultMaxCollisionAlgorithmPoolSize = state.GetValue < long >( 2, true );
+	u32 defaultMaxCollisionAlgorithmPoolSize = state.GetValue < u32 >( 2, true );
 	self->mConstructionInfo.m_defaultMaxCollisionAlgorithmPoolSize = defaultMaxCollisionAlgorithmPoolSize;
 	return 0;	
 };
 //----------------------------------------------------------------//
 int MOAIBulletWorld::_defaultMaxPersistentManifoldPoolSize ( lua_State* L ) {
 	MOAI_LUA_SETUP ( MOAIBulletWorld, "U" )
-	long defaultMaxCollisionAlgorithmPoolSize = state.GetValue < long >( 2, true );
+	u32 defaultMaxCollisionAlgorithmPoolSize = state.GetValue < u32 >( 2, true );
 	self->mConstructionInfo.m_defaultMaxPersistentManifoldPoolSize = defaultMaxCollisionAlgorithmPoolSize;
 	return 0;
 };

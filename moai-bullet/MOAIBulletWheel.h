@@ -8,9 +8,9 @@ private:
 	btRaycastVehicle *mVehicle;
 
 
-	btVector3 mConnect;
-	btVector3 mWheelDirection;
-	btVector3 mWheelAxle;
+	btVector3 *mConnect;
+	btVector3 *mWheelDirection;
+	btVector3 *mWheelAxle;
 
 	float mSuspensionRestLength;
 	float mWheelRadius;	
